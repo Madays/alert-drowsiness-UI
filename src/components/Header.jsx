@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    <header>
+    <header className="flex justify-between fixed top-0 left-0 p-4 w-full">
       <div>Alert drowsiness</div>
       <nav>
-        <ul>
+        <ul className="m-0 flex space-x-2">
           <li>
             <NavLink
               to="/"

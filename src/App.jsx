@@ -8,12 +8,14 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path="/" element={<LandingPage />}></Route>
-          <Route path="/subir-archivo" element={<Upload />}></Route>
-        </Routes>
+        <main className="my-[56px] space-y-4">
+          <Routes>
+            <Route path="/" element={<LandingPage />}></Route>
+            <Route path="/subir-archivo" element={<Upload />}></Route>
+          </Routes>
+        </main>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </>
   );
 }
