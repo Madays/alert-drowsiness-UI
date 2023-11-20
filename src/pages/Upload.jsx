@@ -19,7 +19,7 @@ function Upload() {
         method: "POST",
         body: formData, // Set formData directly as the body
       };
-      fetch("https://d290-2800-4b0-9902-9df6-15d7-abf-40c6-1813.ngrok.io/analyze-image", options)
+      fetch("http://54.88.75.83:8080/analyze-image", options)
         .then((response) => response.json())
         .then((response) => console.log(response))
         .catch((err) => console.error(err));
@@ -32,7 +32,7 @@ function Upload() {
     <>
       <form onSubmit={handleSubmit}>
         <input type="file" onChange={handleFileChange} />
-        <button type="submit">Upload Image</button>
+        <button type="submit" className="bg-blue-600 text-white p-2 rounded">Upload Image</button>
       </form>
     </>
   );
